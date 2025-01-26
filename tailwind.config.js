@@ -1,11 +1,20 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme';
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "hero-pattern":
-          "url('https://images.unsplash.com/photo-1464454709131-ffd692591ee5?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+      fontFamily: {
+        tradegothic: ['"Trade Gothic LT"', ...defaultTheme.fontFamily.sans],
+        tradegothicbd: ['"Trade Gothic LT Bold"', ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        'xs': '.7rem',
+        'l': '1.2rem',
+        'xl': '3rem', // 24px
+        'xxl': '4rem',  // 32px
+        'giant': '8rem', // 64px
       },
     },
   },

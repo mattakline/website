@@ -5,6 +5,7 @@ import { IoClose } from "react-icons/io5";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const leftPositionForMobileMenu = isOpen ? "left-0" : "left-[-150%]";
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -15,6 +16,7 @@ const Header = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("no-scroll");
@@ -22,50 +24,61 @@ const Header = () => {
       document.body.classList.remove("no-scroll");
     }
   }, [isOpen]);
+
   return (
-    <header className="bg-white shadow sticky top-0 z-20">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-xl font-bold">Plateful</h1>
-        <nav className="md:flex gap-x-4 hidden">
-          <ul className="flex gap-x-4">
-            <li>
-              <a className="hover:text-blue-500" href="#home">
-                Home
+    // Add sticky
+    <header className="bg-white top-0 z-20">
+      <div className="container mx-auto px-6 py-6 flex items-center">
+        {/* Logo */}
+        <div>
+          <h1 className="font-tradegothic uppercase text-xs">
+            <a href='/'>
+            parallel
+            </a>
+          </h1>
+        </div>
+        {/* Desktop Navigation */}
+        <nav className="md:flex hidden mx-10 px-20 items-center">
+        <ul className="flex gap-x-6 items-center list-none m-0 p-0">
+            <li className="flex items-center">
+            <a className="font-tradegothic uppercase text-xs hover:underline" href="#menu">
+                Selected work
               </a>
             </li>
-            <li>
-              <a className="hover:text-blue-500" href="#menu">
-                Menu
+            <li className="flex items-center">
+            <a className="font-tradegothic uppercase text-xs hover:underline" href="#about">
+                Creative
               </a>
             </li>
-            <li>
-              <a className="hover:text-blue-500" href="#about">
-                About
-              </a>
-            </li>
-            <li>
-              <a className="hover:text-blue-500" href="#contact">
+            <li className="flex items-center">
+            <a className="font-tradegothic uppercase text-xs hover:underline" href="#contact">
                 Contact
               </a>
             </li>
           </ul>
         </nav>
+
+        {/* Mobile Menu Icon */}
         {!isOpen && (
           <div
             onClick={() => setIsOpen(true)}
-            className="flex md:hidden cursor-pointer"
+            className="flex md:hidden cursor-pointer ml-auto"
           >
             <GiHamburgerMenu size={30} />
           </div>
         )}
+
+        {/* Close Menu Icon */}
         {isOpen && (
           <div
             onClick={() => setIsOpen(false)}
-            className="flex md:hidden z-50 cursor-pointer"
+            className="flex md:hidden z-50 cursor-pointer ml-auto"
           >
             <IoClose size={30} />
           </div>
         )}
+
+        {/* Mobile Navigation */}
         <div
           className={`fixed z-40 top-0 ${leftPositionForMobileMenu} h-screen w-screen duration-1000 bg-black/50 overflow-y-auto`}
         >
@@ -94,17 +107,8 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <button
-              onClick={() => setIsOpen(false)}
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 "
-            >
-              Get Started
-            </button>
           </div>
         </div>
-        <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 md:block hidden">
-          Get Started
-        </button>
       </div>
     </header>
   );
