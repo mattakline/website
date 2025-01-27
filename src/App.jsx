@@ -7,12 +7,25 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header />
-      <Hero />
-      <Dishes />
-      <About />
-      <Contact />
+      <div
+        className="flex w-screen h-screen overflow-x-scroll snap-x snap-mandatory"
+        id="scroll-container"
+      >
+        <section id="hero" className="snap-start w-screen h-screen">
+          <Hero />
+        </section>
+        <section id="dishes" className="snap-start w-screen h-screen">
+          <Dishes />
+        </section>
+        <section id="about" className="snap-start w-screen h-screen">
+          <About />
+        </section>
+        <section id="contact" className="snap-start w-screen h-screen">
+          <Contact />
+        </section>
+      </div>
       <Footer />
     </div>
   );
