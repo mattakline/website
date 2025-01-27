@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const About = () => {
+const Services = () => {
   return (
     <section id="about" className="py-12 bg-white">
       <div className="container mx-auto px-4">
@@ -38,4 +38,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Services;
