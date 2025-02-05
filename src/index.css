@@ -8,6 +8,15 @@ html {
 .no-scroll {
   overflow: hidden;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
 @font-face {
   font-family: 'Trade Gothic LT';
   src: url('/src/assets/fonts/TradeGothicLT.ttf') format('truetype');

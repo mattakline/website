@@ -1,17 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const Hero = () => {
-  const [offsetY, setOffsetY] = useState(0);
-
-  const handleScroll = () => {
-    setOffsetY(window.scrollY);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <section
       id="home"
@@ -31,43 +20,27 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black opacity-70"></div>
 
       {/* Content */}
-      <div className="text-center z-10">
-        <h1 className="font-tradegothic uppercase text-l text-white leading-[1.2]">
-          {/* Explore Line */}
-          <p
-            className="relative"
-            style={{
-              transform: `translateX(-${offsetY * 0.1}px)`, // Moves left as you scroll down
-              transition: "transform 0.1s ease-out",
-            }}
-          >
-            elevate
+      <div className="text-left z-10 text-white hover:underline">
+          <p className="font-tradegothic text-xs uppercase text-white hover:underline leading-[2.1]">
+            + +
           </p>
-
-          {/* Imagine Line */}
-          <p
-            className="relative"
-            style={{
-              transform: `translateX(0)`, // Stays in the center
-              transition: "transform 0.1s ease-out",
-            }}
-          >
-            your
+          <h2 className="font-tradegothicbd text-l uppercase leading-[1.1]">
+            ELEVATE
+            <br />
+            YOUR BRAND
+          </h2>
+          <p className="font-tradegothic text-xs uppercase">
+            Custom branding solutions to fit
           </p>
-
-          {/* Create Line */}
-          <p
-            className="relative"
-            style={{
-              transform: `translateX(${offsetY * 0.1}px)`, // Moves right as you scroll down
-              transition: "transform 0.1s ease-out",
-            }}
-          >
-            brand
+          <p className="font-tradegothic text-xs uppercase">
+            your needs and your budget.
           </p>
-        </h1>
-      </div>
-    </section>
+        {/* <h1 className="font-tradegothic uppercase text-xs text-white leading-[1.2]">
+          <p className="relative">elevate your brand</p>
+          {/* <p className="relative">your</p>
+          <p className="relative">brand</p>>/hi> */}
+    </div>
+    </section >
   );
 };
 

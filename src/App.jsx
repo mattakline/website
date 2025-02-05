@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Dishes from "./components/Dishes";
+import Clients from "./components/Clients";
+import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -14,10 +14,10 @@ const App = () => {
   };
 
   const pages = [
-    <Hero key="hero" />,
-    <Services key="services" />,
-    <Dishes key="work" />,
-    <Contact key="contact" />,
+    { component: <Hero />, key: "hero" },
+    { component: <Work />, key: "work" },
+    { component: <Clients />, key: "clients" },
+    { component: <Contact />, key: "contact" },
   ];
 
   return (
@@ -30,14 +30,14 @@ const App = () => {
           className="flex transition-transform duration-700 ease-in-out"
           style={{ transform: `translateX(-${currentPage * 100}%)` }}
         >
-          {pages.map((Page, index) => (
-            <div key={index} className="w-screen h-screen flex-shrink-0">
-              {Page}
+          {pages.map(({ component, key }) => (
+            <div key={key} className="w-screen h-screen flex-shrink-0">
+              {component}
             </div>
           ))}
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

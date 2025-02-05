@@ -2,18 +2,19 @@ import React from "react";
 
 const Header = ({ onNavigate }) => {
   return (
-    <header className="bg-white sticky top-0 z-20">
-      <div className="flex items-center py-6" style={{ marginLeft: "10%" }}>
+    <header className="flex bg-white sticky top-0 z-20">
+      <div className="flex items-center py-4" style={{ marginLeft: "60px"}}>
         {/* Logo */}
-        <h1 className="font-tradegothic uppercase text-xs mr-16">
+        <h1 className="font-tradegothic uppercase text-xs" style={{marginRight:"76px" }}>
           <button
             onClick={() => onNavigate(0)}
             className="font-tradegothic uppercase text-xs"
           >
-            Parallel
+            The Factory
           </button>
         </h1>
-
+    </div>
+    <div className="flex items-center py-4">
         {/* Navigation */}
         <nav className="md:flex hidden">
           <ul className="flex gap-x-6 items-center">
@@ -22,7 +23,7 @@ const Header = ({ onNavigate }) => {
                 onClick={() => onNavigate(1)}
                 className="font-tradegothic uppercase py-2 text-xs hover:underline"
               >
-                SERVICES
+                SELECTED WORK
               </button>
             </li>
             <li>
@@ -30,7 +31,7 @@ const Header = ({ onNavigate }) => {
                 onClick={() => onNavigate(2)}
                 className="font-tradegothic uppercase py-2 text-xs hover:underline"
               >
-                SELECTED WORK
+                CLIENTS
               </button>
             </li>
             <li>
@@ -38,7 +39,7 @@ const Header = ({ onNavigate }) => {
                 onClick={() => onNavigate(3)}
                 className="font-tradegothic uppercase py-2 text-xs hover:underline"
               >
-                Contact
+                CONTACT
               </button>
             </li>
           </ul>
