@@ -15,7 +15,7 @@ const Work = () => {
 
   return (
     <section id="menu" className="py-12 bg-white-100">
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[75%]" style={{ marginLeft: "188px" }}>
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[75%]" style={{ marginLeft: "186px" }}>
         {filteredDishes.map((dish) => (
           <div key={dish.id} className="bg-white px-4">
             <p className="font-tradegothic text-xs uppercase hover:underline leading-[2.1]">

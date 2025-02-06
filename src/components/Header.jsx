@@ -1,49 +1,56 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const Header = ({ onNavigate }) => {
+const Header = () => {
   return (
-    <header className="flex bg-white sticky top-0 z-20">
-      <div className="flex items-center py-4" style={{ marginLeft: "60px"}}>
+    <header className="flex bg-transparent items-center sticky top-0 z-20">
+      <div className="flex py-4" style={{ marginLeft: "60px" }}>
         {/* Logo */}
-        <h1 className="font-tradegothic uppercase text-xs" style={{marginRight:"76px" }}>
-          <button
-            onClick={() => onNavigate(0)}
-            className="font-tradegothic uppercase text-xs"
-          >
-            The Factory
-          </button>
+        <h1 className="font-tradegothic uppercase text-xs" style={{ marginRight: "102px" }}>
+          <NavLink to="/" className="font-tradegothic uppercase text-xs">
+          M KLINE
+          </NavLink>
         </h1>
-    </div>
-    <div className="flex items-center py-4">
+      </div>
+      <div className="flex py-4">
         {/* Navigation */}
-        <nav className="md:flex hidden">
+        <nav className="md:flex items-center hidden">
           <ul className="flex gap-x-6 items-center">
-            <li>
-              <button
-                onClick={() => onNavigate(1)}
-                className="font-tradegothic uppercase py-2 text-xs hover:underline"
+            <li className="flex items-center">
+              <NavLink
+                to="/work"
+                className={({ isActive }) =>
+                  `font-tradegothic uppercase items-center text-xs hover:underline ${isActive ? "underline" : ""}`
+                }
               >
                 SELECTED WORK
-              </button>
+              </NavLink>
             </li>
-            <li>
-              <button
-                onClick={() => onNavigate(2)}
-                className="font-tradegothic uppercase py-2 text-xs hover:underline"
+            <li className="flex items-center">
+              <NavLink
+                to="/clients"
+                className={({ isActive }) =>
+                  `font-tradegothic uppercase py-2 text-xs hover:underline ${isActive ? "underline" : ""}`
+                }
               >
                 CLIENTS
-              </button>
+              </NavLink>
             </li>
-            <li>
-              <button
-                onClick={() => onNavigate(3)}
-                className="font-tradegothic uppercase py-2 text-xs hover:underline"
+            <li className="flex items-center">
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  `font-tradegothic uppercase py-2 text-xs hover:underline ${isActive ? "underline" : ""}`
+                }
               >
                 CONTACT
-              </button>
+              </NavLink>
             </li>
           </ul>
         </nav>
+        <div className="absolute right-10 top-5">
+        <img src="/images/mk-logo.png" alt="MK" className="w-6 h-auto" />
+        </div>
       </div>
     </header>
   );

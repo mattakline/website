@@ -3,11 +3,15 @@ import React from "react";
 const Contact = () => {
   return (
     <section id="contact" className="py-12 bg-white-100">
-      <div className="container mx-auto px-4 text-left font-tradegothic text-xs uppercase" style={{ marginLeft: "188px" }}>
-        <h2>Get in Touch</h2>
-        <p>We'd love to hear from you.</p>
-        <p>Reach out with any questions or inquiries.</p>
-        <p>Email us at contact@example.com.</p>
+      <div className="container mx-auto px-4 text-left font-tradegothic text-xs uppercase" style={{ marginLeft: "186px" }}>
+        <h2>Matthew Kline</h2>
+        <p>Drop Economics LLC</p>
+        <p>607 Shelby St. Ste 700</p>
+        <p>Detroit 48226</p>
+        <br></br>
+        <p className="underline">contact@dropeconomics.com</p>
+        <br></br>
+        <a href="https://www.linkedin.com/in/mattakline/" className="underline">linkedin.com/in/mattakline/</a>
       </div>
     </section>
   );

@@ -17,7 +17,7 @@ const Hero = () => {
       ></video>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black opacity-70"></div>
+      <div className="absolute inset-0 bg-black opacity-65"></div>
 
       {/* Content */}
       <div className="text-left z-10 text-white hover:underline">
@@ -29,12 +29,12 @@ const Hero = () => {
             <br />
             YOUR BRAND
           </h2>
-          <p className="font-tradegothic text-xs uppercase">
+          {/* <p className="font-tradegothic text-xs uppercase">
             Custom branding solutions to fit
           </p>
           <p className="font-tradegothic text-xs uppercase">
             your needs and your budget.
-          </p>
+          </p> */}
         {/* <h1 className="font-tradegothic uppercase text-xs text-white leading-[1.2]">
           <p className="relative">elevate your brand</p>
           {/* <p className="relative">your</p>
