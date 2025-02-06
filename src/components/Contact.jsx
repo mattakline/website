@@ -2,8 +2,8 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-12 bg-white-100">
-      <div className="container absolute top-19 py-10 mx-auto px-4 text-left font-tradegothic text-xs uppercase" style={{ marginLeft: "186px" }}>
+    <section id="contact" className="py-6 bg-white-100">
+      <div className="container absolute py-6 mx-auto px-4 sm:left-[108px] md:left-[182px] text-left font-tradegothic text-xs uppercase">
         <h2>Matt Kline</h2>
         <p>Drop Economics LLC</p>
         <p>607 Shelby St. Ste 700</p>

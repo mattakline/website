@@ -3,18 +3,18 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="flex bg-transparent items-center sticky top-0 z-20">
-      <div className="absolute left-[60px] py-2 top-4 flex items-center">
+    <header className="sm:flex bg-transparent items-center sticky z-20">
+      <div className="ml-4 sm:ml-[40px] md:ml-[74px] mt-4 sm:mt-0 sm:py-2 flex items-center">
         {/* Logo */}
-        <h1 className="font-tradegothic uppercase text-xs" style={{ marginRight: "102px" }}>
+        <h1 className="font-tradegothic uppercase text-xs">
           <NavLink to="/" className="font-tradegothic uppercase text-xs whitespace-nowrap">
           M KLINE
           </NavLink>
         </h1>
       </div>
-      <div className="flex py-4 w-full">
+      <div className="flex sm:py-4 w-full">
         {/* Navigation */}
-        <nav className="absolute left-[200px] top-4 flex items-center">
+        <nav className="ml-4 sm:ml-[40px] md:ml-[80px] top-4 flex items-center">
           <ul className="flex gap-x-6 items-center">
             <li className="flex items-center">
               <NavLink

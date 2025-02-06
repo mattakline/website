@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { dishes } from "../data/data";
-import { motion } from "framer-motion";
 
 const Work = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -14,10 +14,15 @@ const Work = () => {
     : dishes;
 
   return (
-    <section id="menu" className="py-12 bg-white-100">
-      <div className="container absolute top-19 py-10 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[75%]" style={{ marginLeft: "186px" }}>
+    <section id="menu" className="py-6 bg-white-100">
+      <div className="container py-[20px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 lg:max-w-[1000px] md:max-w-[700px] sm:ml-[108px] md:ml-[182px]">
         {filteredDishes.map((dish) => (
-          <div key={dish.id} className="bg-transparent hover:underline px-4">
+                 <Link
+                 key={dish.id}
+                 // Convert dish.line2 to lowercase and replace spaces with dashes
+                 to={`/portfolio/${dish.line2.toLowerCase().replace(/\s+/g, "-")}`}
+                 className="bg-transparent hover:underline px-4"
+               >
             <p className="font-tradegothic text-xs uppercase leading-[2.1]">
               {dish.line0}
             </p>
@@ -35,18 +40,17 @@ const Work = () => {
             <p className="font-tradegothic text-xs uppercase">
               {dish.line5}
             </p>
-          </div>
+          </Link>
         ))}
       </div>
       <video
-        className="absolute bottom-0 left-0 w-3/5 h-3/5 objectcover -z-10 inset-0"
-        src="/videos/website.mp4"
+        className="fixed bottom-[140px] left-20 sm:left-40 md:left-80 w-[1100px] h-[600px] object-cover -z-10"
         autoPlay
-        loop
         muted
-        playsInline
-      ></video>
-      <div className="py-10"></div>
+        loop
+      >
+        <source src="/videos/website.mp4" type="video/mp4" />
+      </video>
     </section>
   );
 };

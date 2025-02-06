@@ -51,7 +51,7 @@ export const dishes = [
     line4: "Production _ Capacity",
     line5: "Agency _ Turtle ",
     line6: "",
-    image: "https://images.unsplash.com/photo-1707576517985-a2e912cca325?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    link: "https://links.unsplash.com/photo-1707576517985-a2e912cca325?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 2,
@@ -62,7 +62,7 @@ export const dishes = [
     line4: "EP _ Simon Eicher",
     line5: "Agency _ Turtle",
     line6: "",
-    image: "https://www.youtube.com/watch?v=TC6N1zHvXpU&list=PLDaLNkCsG9WlWkv8drDPVX2Gf63etfCU0&index=47"
+    link: "https://www.youtube.com/watch?v=TC6N1zHvXpU&list=PLDaLNkCsG9WlWkv8drDPVX2Gf63etfCU0&index=47"
   },
   {
     id: 3,
@@ -73,7 +73,7 @@ export const dishes = [
     line4: "Production _ Engine",
     line5: "Agency _ Microsoft",
     line6: "",
-    image: "https://images.unsplash.com/photo-1633368475182-7c4773552630?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    link: "https://links.unsplash.com/photo-1633368475182-7c4773552630?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 4,
@@ -84,7 +84,7 @@ export const dishes = [
     line4: "Production _ Matt Kline",
     line5: "Agency _ Mashable",
     line6: "",
-    image: "https://images.unsplash.com/photo-1626844131082-256783844137?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    link: "https://links.unsplash.com/photo-1626844131082-256783844137?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 5,
@@ -95,7 +95,7 @@ export const dishes = [
     line4: "Edit _ Riley Hastings",
     line5: "Agency _ Microsoft",
     line6: "",
-    image: "https://www.youtube.com/watch?v=q3fa-OIsBvU"
+    link: "https://www.youtube.com/watch?v=q3fa-OIsBvU"
   },
   {
     id: 6,
@@ -106,7 +106,7 @@ export const dishes = [
     line4: "Production _ Matt Kline",
     line5: "Agency _ Mashable",
     line6: "",
-    image: "https://images.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    link: "https://links.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 7,
@@ -117,7 +117,7 @@ export const dishes = [
     line4: "Production _ Loose",
     line5: "Agency _ Microsoft",
     line6: "",
-    image: "https://images.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    link: "https://links.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 8,
@@ -128,7 +128,7 @@ export const dishes = [
     line4: "EP _ Casey Neistat",
     line5: "Agency _ 368",
     line6: "",
-    image: "https://images.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    link: "https://links.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 9,
@@ -139,7 +139,7 @@ export const dishes = [
     line4: "Director _ Matt Kline",
     line5: "Agency _ Turtle",
     line6: "",
-    image: "https://images.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    link: "https://links.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 10,
@@ -150,7 +150,7 @@ export const dishes = [
     line4: "Production _ Matt Kline",
     line5: "Agency _ Mashable",
     line6: "",
-    image: "https://images.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    link: "https://links.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 11,
@@ -161,7 +161,7 @@ export const dishes = [
     line4: "EP _ Simon Eicher",
     line5: "Agency _ Turtle",
     line6: "",
-    image: "https://images.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    link: "https://links.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 12,
@@ -172,6 +172,6 @@ export const dishes = [
     line4: "Production _ Capacity",
     line5: "Agency _ 343",
     line6: "",
-    image: "https://images.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    link: "https://links.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
