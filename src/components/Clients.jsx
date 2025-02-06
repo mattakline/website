@@ -3,8 +3,8 @@ import { brands, agencies } from "../data/data";
 
 const Clients = () => {
   return (
-    <section id="clients" className="font-tradegothic text-xs uppercase" style={{ marginLeft: "186px" }}>
-      <div className="container mx-auto px-4 py-12">
+    <section id="clients" className="font-tradegothic py-12 text-xs uppercase" style={{ marginLeft: "186px" }}>
+      <div className="container absolute top-19 py-10 px-4 left-53">
         <h2 className="uppercase mb-4">Brands _</h2>
         <div className="mb-4">
           {[...brands].sort().map((brand, index) => (
