@@ -4,7 +4,7 @@ import { brands, agencies } from "../data/data";
 const Clients = () => {
   return (
     <section id="clients" className="font-tradegothic py-6 text-xs uppercase">
-      <div className="container py-6 px-4 sm:ml-[108px] md:ml-[182px]">
+      <div className="container py-6 px-4 sm:ml-[160px] md:ml-[180px]">
         <h2 className="uppercase mb-4">Brands _</h2>
         <div className="mb-4">
           {[...brands].sort().map((brand, index) => (

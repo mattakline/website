@@ -14,7 +14,7 @@ const Header = () => {
       </div>
       <div className="flex w-full">
         {/* Navigation: push to right on mobile */}
-        <nav className="mr-4 ml-auto sm:ml-[74px] md:ml-[108px] flex items-center">
+        <nav className="mr-4 ml-auto sm:ml-[94px] md:ml-[108px] flex items-center">
           <ul className="flex gap-x-6 items-center">
             <li className="flex items-center">
               <NavLink

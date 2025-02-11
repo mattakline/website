@@ -32,7 +32,7 @@ const Hero = () => {
         <h2 className="relative before:content-['+'] before:absolute before:-left-3 before:opacity-0 group-hover:before:opacity-100">
           Marketing
         </h2>
-        <span className="absolute top-[88px] left-0 font-tradegothic text-xs uppercase hidden group-hover:block">
+        <span className="absolute top-[92px] left-0 font-tradegothic text-xs uppercase hidden group-hover:block">
         Digital native, multidisciplinary marketing expert.</span>
       </div>
       <div className="relative group">
@@ -52,7 +52,7 @@ const Hero = () => {
         muted
         loop
       >
-        <source src="/videos/website.mp4" type="video/mp4" />
+        <source src="./videos/website.mp4" type="video/mp4" />
       </video>
 
       {/* Dark Overlay */}

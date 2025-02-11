@@ -7,10 +7,10 @@ const Work = () => {
   return (
     <section id="menu" className="py-6 bg-white-100">
       {/* Live Items */}
-      <h2 className="font-tradegothic uppercase text-xs ml-[15px] md:ml-[196px] mt-[30px]">
+      <h2 className="font-tradegothic uppercase text-xs ml-[15px] sm:ml-[176px] md:ml-[196px] mt-[24px]">
         Live
       </h2>
-      <div className="container py-[24px] mx-auto grid grid-cols-2 gap-10 max-w-[500px] md:ml-[182px]">
+      <div className="container py-[24px] mx-auto grid grid-cols-2 gap-10 max-w-[500px] ml-0 sm: ml-[160px] md:ml-[176px]">
         {live.map((item) => (
           <Link
             key={item.id}
@@ -37,10 +37,10 @@ const Work = () => {
       </div>
 
       {/* Video Items */}
-      <h2 className="font-tradegothic uppercase text-xs ml-[15px] md:ml-[196px] mt-[40px]">
+      <h2 className="font-tradegothic uppercase text-xs ml-[15px] sm:ml-[176px] md:ml-[196px] mt-[24px]">
         Video
       </h2>
-      <div className="container py-[30px] mx-auto grid grid-cols-2 gap-10 max-w-[500px] md:ml-[182px]">
+      <div className="container py-[24px] mx-auto grid grid-cols-2 gap-10 max-w-[500px] ml-0 sm: ml-[160px] md:ml-[176px]">
         {video.map((item) => (
           <Link
             key={item.id}

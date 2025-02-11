@@ -48,7 +48,7 @@ export const live = [
     line5: "Agency _ Microsoft",
     line6: "",
     link: "https://youtu.be/oZkz8w1JOtk?t=726",
-    thumb: "/images/halowc-desk.png"
+    thumb: "./images/halowc-desk.png"
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ export const live = [
     line5: "Agency _ Microsoft",
     line6: "https://www.youtube.com/@HCS/streams",
     link: "https://www.youtube.com/watch?v=nN-4jfcluKQ&t=885s",
-    thumb: "/images/hcs.png"
+    thumb: "./images/hcs.png"
   },
   {
     id: 3,
@@ -72,7 +72,7 @@ export const live = [
     line5: "Agency _ Turtle",
     line6: "",
     link: "https://www.youtube.com/watch?v=TC6N1zHvXpU&list=PLDaLNkCsG9WlWkv8drDPVX2Gf63etfCU0&index=47",
-    thumb: "/images/eslone.png"
+    thumb: "./images/eslone.png"
   },
   {
     id: 4,
@@ -84,7 +84,7 @@ export const live = [
     line5: "Agency _ Turtle",
     line6: "",
     link: "https://www.youtube.com/watch?v=cqWABHJxNy4",
-    thumb: "/images/epl.png"
+    thumb: "./images/epl.png"
   },
   {
     id: 5,
@@ -96,7 +96,7 @@ export const live = [
     line5: "Agency _ Turtle",
     line6: "",
     link: "https://www.youtube.com/watch?v=KySzKy9NTUk",
-    thumb: "/images/iem-card.png"
+    thumb: "./images/iem-card.png"
   },
   {
     id: 6,
@@ -108,7 +108,7 @@ export const live = [
     line5: "Agency _ Turtle",
     line6: "",
     link: "https://www.youtube.com/watch?v=QgYOeuvuOas",
-    thumb: "/images/wcs.png"
+    thumb: "./images/wcs.png"
   }
 ];
 export const video = [
@@ -122,7 +122,7 @@ export const video = [
     line5: "Agency _ Mashable",
     line6: "",
     link: "https://www.youtube.com/watch?v=UQDGS9Qvh8g",
-    thumb: "/images/npf.png"
+    thumb: "./images/npf.png"
   },
   {
     id: 2,
@@ -134,15 +134,15 @@ export const video = [
     line5: "Agency _ Microsoft",
     line6: "",
     link: "https://www.youtube.com/watch?v=6l5t_Acxuic",
-    thumb: "/images/top25.png"
+    thumb: "./images/top25.png"
   },
   {
     id: 6,
     line0: "06",
     line1: "SAMSUNG",
     line2: "GALAXY S8",
-    line3: "EP _ Lance Ulanoff",
-    line4: "Production _ Matt Kline",
+    line3: "Production _ Matt Kline",
+    line4: "EP _ Lance Ulanoff",
     line5: "Agency _ Mashable",
     line6: "",
     link: "https://www.youtube.com/watch?v=PsOEUk7rYfc",
@@ -170,7 +170,7 @@ export const video = [
     line5: "Agency _ Mashable",
     line6: "",
     link: "https://www.youtube.com/watch?v=jAu1ZsTCA64",
-    thumb: "/images/dota.jpg"
+    thumb: "./images/dota.jpg"
   },
   {
     id: 5,
@@ -182,7 +182,7 @@ export const video = [
     line5: "Agency _ Mashable",
     line6: "",
     link: "https://www.youtube.com/watch?v=ooXJcSw48CA",
-    thumb: "/images/hacker.png"
+    thumb: "./images/hacker.png"
   },
   {
     id: 4,
@@ -194,7 +194,7 @@ export const video = [
     line5: "Agency _ Microsoft",
     line6: "",
     link: "https://www.youtube.com/watch?v=43k__JLKxqw",
-    thumb: "/images/questions.png"
+    thumb: "./images/questions.png"
   },
   {
     id: 8,
@@ -206,7 +206,7 @@ export const video = [
     line5: "Agency _ Microsoft",
     line6: "",
     link: "https://www.youtube.com/watch?v=-Z2uSkUBanA",
-    thumb: "/images/astro.png"
+    thumb: "./images/astro.png"
   }
 ];
 export const creative = [
@@ -220,7 +220,7 @@ export const creative = [
     line5: "Agency _ Microsoft",
     line6: "",
     link: "https://www.youtube.com/watch?v=UQDGS9Qvh8g",
-    thumb: "/images/npf.png"
+    thumb: "./images/npf.png"
   },
   {
     id: 2,
@@ -232,7 +232,7 @@ export const creative = [
     line5: "Agency _ Turtle",
     line6: "",
     link: "https://www.youtube.com/watch?v=6l5t_Acxuic",
-    thumb: "/images/eslone.png"
+    thumb: "./images/eslone.png"
   }
 ];
 // IEM https://www.youtube.com/watch?v=KySzKy9NTUk
