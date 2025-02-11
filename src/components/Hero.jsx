@@ -17,7 +17,7 @@ const Hero = () => {
         Strategy
         </h2>
         <span className="absolute top-[152px] left-0 font-tradegothic text-xs uppercase hidden group-hover:block">
-          Creator of high impact brands, campaigns, and content.
+          Insights for modern brands, campaigns, and content.
         </span>
       </div>
       <div className="relative group">
@@ -33,14 +33,14 @@ const Hero = () => {
           Marketing
         </h2>
         <span className="absolute top-[88px] left-0 font-tradegothic text-xs uppercase hidden group-hover:block">
-        Experienced marketer managing web, email, SEO/SEM, social, and events.</span>
+        Digital native, multidisciplinary marketing expert.</span>
       </div>
       <div className="relative group">
         <h2 className="relative before:content-['+'] before:absolute before:-left-3 before:opacity-0 group-hover:before:opacity-100">
           Leadership
         </h2>
         <span className="absolute top-[56px] left-0 mt-1 font-tradegothic text-xs uppercase hidden group-hover:block">
-        Demonstrated ability to lead large-scale projects for top clients.
+        Proven ability to lead complex projects for top companies.
                 </span>
       </div>
     </div>

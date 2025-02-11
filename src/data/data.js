@@ -182,7 +182,7 @@ export const video = [
     line5: "Agency _ Mashable",
     line6: "",
     link: "https://www.youtube.com/watch?v=ooXJcSw48CA",
-    thumb: "./images/hacker.png"
+    thumb: "/images/hacker.png"
   },
   {
     id: 4,
@@ -206,7 +206,7 @@ export const video = [
     line5: "Agency _ Microsoft",
     line6: "",
     link: "https://www.youtube.com/watch?v=-Z2uSkUBanA",
-    thumb: "./images/astro.png"
+    thumb: "/images/astro.png"
   }
 ];
 export const creative = [
