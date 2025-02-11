@@ -1,7 +1,8 @@
 export const brands = [
   "Xbox",
-  "343 Industries",
-  "Blizzard",
+  "Halo",
+  "Microsoft",
+  "Activision Blizzard",
   "Riot Games",
   "Wargaming",
   "Electronic Arts",
@@ -19,160 +20,219 @@ export const brands = [
   "Dr. Pepper",
   "TheScore",
   "ESL",
-  "Major League Gaming",
   "Xfinity",
   "NVIDIA",
   "ASUS",
   "Old Spice",
   "Philadelphia 76ers",
-  "Activision"
 ];
 
 export const agencies = [
   "Mashable",
-  "New Meta",
+  "Harris Blitzer",
   "Microsoft",
   "Turtle Entertainment",
-  "Capacity",
-  "Esports Engine",
   "Major League Gaming",
   "368",
   "Dreamhack",
-  "Loose Films"
 ];
 
-export const dishes = [
+export const live = [
   {
     id: 1,
-    line0: "Broadcast",
-    line1: "ESL",
-    line2: "PRO LEAGUE",
-    line3: "EP _ Matt Kline",
-    line4: "Producer _ Matt Kline",
-    line5: "Agency _ Turtle ",
-    line6: "",
-    link: "https://www.youtube.com/watch?v=cqWABHJxNy4"
-  },
-  {
-    id: 2,
-    line0: "Broadcast",
-    line1: "ESL ONE",
-    line2: "COLOGNE MAJOR",
-    line3: "Producer _ Matt Kline",
-    line4: "EP _ Simon Eicher",
-    line5: "Agency _ Turtle",
-    line6: "",
-    link: "https://www.youtube.com/watch?v=TC6N1zHvXpU&list=PLDaLNkCsG9WlWkv8drDPVX2Gf63etfCU0&index=47"
-  },
-  {
-    id: 3,
-    line0: "Broadcast",
+    line0: "01",
     line1: "Microsoft",
     line2: "Halo WC",
     line3: "EP _ Matt Kline",
     line4: "Production _ Engine",
     line5: "Agency _ Microsoft",
     line6: "",
-    link: "https://youtu.be/oZkz8w1JOtk?t=726"
+    link: "https://youtu.be/oZkz8w1JOtk?t=726",
+    thumb: "/images/halowc-desk.png"
   },
   {
-    id: 4,
-    line0: "Series",
-    line1: "XBOX",
-    line2: "NO PLAYING FIELD",
-    line3: "Creator _ Matt Kline",
-    line4: "Production _ Matt Kline",
-    line5: "Agency _ Mashable",
-    line6: "",
-    link: "https://www.youtube.com/watch?v=UQDGS9Qvh8g"
-  },
-  {
-    id: 5,
-    line0: "Series",
+    id: 2,
+    line0: "02",
     line1: "Microsoft",
-    line2: "Halo Top 25",
+    line2: "HCS Esports",
     line3: "EP _ Matt Kline",
-    line4: "Edit _ Riley Hastings",
+    line4: "Production _ Engine",
     line5: "Agency _ Microsoft",
-    line6: "",
-    link: "https://www.youtube.com/watch?v=6l5t_Acxuic"
+    line6: "https://www.youtube.com/@HCS/streams",
+    link: "https://www.youtube.com/watch?v=nN-4jfcluKQ&t=885s",
+    thumb: "/images/hcs.png"
   },
   {
-    id: 6,
-    line0: "Series",
-    line1: "MASHABLE",
-    line2: "DOTA 2 AI",
-    line3: "EP _ Matt Kline",
-    line4: "Production _ Matt Kline",
-    line5: "Agency _ Mashable",
-    line6: "",
-    link: "https://www.youtube.com/watch?v=jAu1ZsTCA64"
-  },
-  {
-    id: 7,
-    line0: "Series",
-    line1: "GAME PASS",
-    line2: "QUESTIONS",
-    line3: "EP _ Matt Kline",
-    line4: "Production _ Loose",
-    line5: "Agency _ Microsoft",
-    line6: "",
-    link: "https://www.youtube.com/watch?v=43k__JLKxqw"
-  },
-  {
-    id: 8,
-    line0: "Event",
-    line1: "Electronic Arts",
-    line2: "368 x Battlefield",
-    line3: "Consultant _ Matt Kline",
-    line4: "EP _ Casey Neistat",
-    line5: "Agency _ 368",
-    line6: "",
-    link: "https://links.unsplash.com/photo-1597652096872-658bf24731ec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    id: 9,
-    line0: "Broadcast",
-    line1: "Intel",
-    line2: "IEM Katowice",
-    line3: "Producer _ Matt Kline", 
+    id: 3,
+    line0: "03",
+    line1: "ESL ONE",
+    line2: "COLOGNE MAJOR",
+    line3: "Producer _ Matt Kline",
     line4: "EP _ Simon Eicher",
     line5: "Agency _ Turtle",
     line6: "",
-    link: "https://youtu.be/oZkz8w1JOtk?t=24427"
+    link: "https://www.youtube.com/watch?v=TC6N1zHvXpU&list=PLDaLNkCsG9WlWkv8drDPVX2Gf63etfCU0&index=47",
+    thumb: "/images/eslone.png"
   },
   {
-    id: 10,
-    line0: "Ad",
-    line1: "ASTRO",
-    line2: "EVENT EXPERIENCE",
+    id: 4,
+    line0: "04",
+    line1: "ESL",
+    line2: "PRO LEAGUE",
     line3: "EP _ Matt Kline",
-    line4: "Production _ Loose",
-    line5: "Agency _ Microsoft",
+    line4: "Production _ Matt Kline",
+    line5: "Agency _ Turtle",
     line6: "",
-    link: "https://www.youtube.com/watch?v=-Z2uSkUBanA"
+    link: "https://www.youtube.com/watch?v=cqWABHJxNy4",
+    thumb: "/images/epl.png"
   },
   {
-    id: 11,
-    line0: "Broadcast",
+    id: 5,
+    line0: "05",
+    line1: "Intel",
+    line2: "Extreme Masters",
+    line3: "Producer _ Matt Kline",
+    line4: "EP _ Simon Eicher",
+    line5: "Agency _ Turtle",
+    line6: "",
+    link: "https://www.youtube.com/watch?v=KySzKy9NTUk",
+    thumb: "/images/iem-card.png"
+  },
+  {
+    id: 6,
+    line0: "06",
     line1: "BLIZZARD",
     line2: "WCS Global FInals",
     line3: "Producer _ Matt Kline",
     line4: "EP _ Simon Eicher",
     line5: "Agency _ Turtle",
     line6: "",
-    link: "https://www.youtube.com/watch?v=QgYOeuvuOas"
+    link: "https://www.youtube.com/watch?v=QgYOeuvuOas",
+    thumb: "/images/wcs.png"
+  }
+];
+export const video = [
+  {
+    id: 1,
+    line0: "01",
+    line1: "XBOX",
+    line2: "NO PLAYING FIELD",
+    line3: "EP _ Matt Kline",
+    line4: "Production _ Matt Kline",
+    line5: "Agency _ Mashable",
+    line6: "",
+    link: "https://www.youtube.com/watch?v=UQDGS9Qvh8g",
+    thumb: "/images/npf.png"
   },
   {
-    id: 12,
-    line0: "Brand",
+    id: 2,
+    line0: "02",
     line1: "Microsoft",
-    line2: "HCS Esports",
-    line3: "Director _ Matt Kline",
+    line2: "Halo Top 25",
+    line3: "EP _ Matt Kline",
+    line4: "Production _ Hastings, Torres",
+    line5: "Agency _ Microsoft",
+    line6: "",
+    link: "https://www.youtube.com/watch?v=6l5t_Acxuic",
+    thumb: "/images/top25.png"
+  },
+  {
+    id: 6,
+    line0: "06",
+    line1: "SAMSUNG",
+    line2: "GALAXY S8",
+    line3: "EP _ Lance Ulanoff",
+    line4: "Production _ Matt Kline",
+    line5: "Agency _ Mashable",
+    line6: "",
+    link: "https://www.youtube.com/watch?v=PsOEUk7rYfc",
+    thumb: "./images/galaxy.png"
+  },
+  {
+    id: 7,
+    line0: "07",
+    line1: "NEIL DEGRASSE",
+    line2: "STARTALK",
+    line3: "Edit _ Matt Kline",
+    line4: "Production _ Mashable",
+    line5: "Agency _ Mashable",
+    line6: "",
+    link: "https://www.youtube.com/watch?v=E9A1RxP1woA",
+    thumb: "./images/neil.png"
+  },
+  {
+    id: 3,
+    line0: "03",
+    line1: "MASHABLE",
+    line2: "DOTA AI",
+    line3: "EP _ Matt Kline",
+    line4: "Production _ Matt Kline",
+    line5: "Agency _ Mashable",
+    line6: "",
+    link: "https://www.youtube.com/watch?v=jAu1ZsTCA64",
+    thumb: "/images/dota.jpg"
+  },
+  {
+    id: 5,
+    line0: "05",
+    line1: "MASHABLE",
+    line2: "HACKER",
+    line3: "EP _ Matt Kline",
+    line4: "Production _ Matt Kline",
+    line5: "Agency _ Mashable",
+    line6: "",
+    link: "https://www.youtube.com/watch?v=ooXJcSw48CA",
+    thumb: "./images/hacker.png"
+  },
+  {
+    id: 4,
+    line0: "04",
+    line1: "GAME PASS",
+    line2: "QUESTIONS",
+    line3: "EP _ Matt Kline",
+    line4: "Production _ Loose",
+    line5: "Agency _ Microsoft",
+    line6: "",
+    link: "https://www.youtube.com/watch?v=43k__JLKxqw",
+    thumb: "/images/questions.png"
+  },
+  {
+    id: 8,
+    line0: "08",
+    line1: "ASTRO",
+    line2: "EVENT EXPERIENCE",
+    line3: "EP _ Matt Kline",
+    line4: "Production _ Loose",
+    line5: "Agency _ Microsoft",
+    line6: "",
+    link: "https://www.youtube.com/watch?v=-Z2uSkUBanA",
+    thumb: "./images/astro.png"
+  }
+];
+export const creative = [
+  {
+    id: 1,
+    line0: "01",
+    line1: "Halo",
+    line2: "Championship Series",
+    line3: "EP _ Matt Kline",
     line4: "Production _ Capacity",
-    line5: "Agency _ 343",
-    line6: "https://www.youtube.com/@HCS/streams",
-    link: "https://youtu.be/nN-4jfcluKQ&t=885"
+    line5: "Agency _ Microsoft",
+    line6: "",
+    link: "https://www.youtube.com/watch?v=UQDGS9Qvh8g",
+    thumb: "/images/npf.png"
+  },
+  {
+    id: 2,
+    line0: "02",
+    line1: "ESL",
+    line2: "Pro League",
+    line3: "EP _ Matt Kline",
+    line4: "Production _ Capacity",
+    line5: "Agency _ Turtle",
+    line6: "",
+    link: "https://www.youtube.com/watch?v=6l5t_Acxuic",
+    thumb: "/images/eslone.png"
   }
 ];
 // IEM https://www.youtube.com/watch?v=KySzKy9NTUk

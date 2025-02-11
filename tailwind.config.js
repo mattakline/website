@@ -10,6 +10,7 @@ export default {
         tradegothicbd: ['"Trade Gothic LT Bold"', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
+        'xxs': '.60rem',
         'xs': '.64rem',
         'l': '1.2rem',
         'xl': '3rem', // 24px

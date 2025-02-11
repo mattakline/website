@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { dishes } from "../data/data";
+import { live, video } from "../data/data";
 
 // Helper to extract a YouTube video ID from a URL
 const getYoutubeId = (url) => {
@@ -25,21 +25,27 @@ const getYoutubeId = (url) => {
 const Showcase = () => {
   // Get the dish ID from the URL, e.g. /showcase/2
   const { id } = useParams();
-  
-  const dish = dishes.find(
-    (d) => d.line2.toLowerCase().replace(/\s+/g, '-') === id
+
+  // Combine both live and video arrays
+  const allItems = [...live, ...video];
+
+  // Find the item matching the URL parameter (using line2 as identifier)
+  const item = allItems.find(
+    (d) => d.line2.toLowerCase().replace(/\s+/g, "-") === id
   );
 
-  if (!dish) {
+  if (!item) {
     return (
       <section className="min-h-screen bg-white flex items-center justify-center">
-        <p className="text-center font-tradegothic text-xs uppercase">404 Page does not exist</p>
+        <p className="text-center font-tradegothic text-xs uppercase">
+          404 Page does not exist
+        </p>
       </section>
     );
   }
 
-  // Extract the YouTube video ID from the dish.link property
-  const videoId = getYoutubeId(dish.link);
+  // Extract the YouTube video ID from the item.link property
+  const videoId = getYoutubeId(item.link);
 
   return (
     <section id="menu" className="py-6 bg-white-100">
@@ -62,20 +68,14 @@ const Showcase = () => {
 
         {/* Text beneath the video */}
         <div className="mt-8 text-left">
-            <h2 className="font-tradegothicbd text-l uppercase leading-[1.1]">
-              {dish.line1}
-              <br />
-              {dish.line2}
-            </h2>
-            <p className="font-tradegothic text-xs uppercase">
-              {dish.line3}
-            </p>
-            <p className="font-tradegothic text-xs uppercase">
-              {dish.line4}
-            </p>
-            <p className="font-tradegothic text-xs uppercase">
-              {dish.line5}
-            </p>
+          <h2 className="font-tradegothicbd text-l uppercase leading-[1.1]">
+            {item.line1}
+            <br />
+            {item.line2}
+          </h2>
+          <p className="font-tradegothic text-xs uppercase">{item.line3}</p>
+          <p className="font-tradegothic text-xs uppercase">{item.line4}</p>
+          <p className="font-tradegothic text-xs uppercase">{item.line5}</p>
         </div>
       </div>
     </section>
