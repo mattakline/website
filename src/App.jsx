@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     //This tells React Router that your app is served from /website
-    <Router basename="/website/">
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Hero />} />
