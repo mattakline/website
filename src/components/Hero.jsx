@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Hero = () => {
+  // Prevent scrolling on mount
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto"; // Restore scrolling when unmounting
+    };
+  }, []);
+
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center">
+    <section id="home" className="fixed top-0 left-0 w-full h-screen flex items-center justify-center">
       {/* Fullscreen Video Background */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay
         muted
         loop
@@ -14,47 +22,11 @@ const Hero = () => {
       </video>
 
       {/* Dark Overlay for better readability (optional) */}
-      {/* <div className="absolute inset-0 bg-black opacity-40 -z-10"></div> */}
+      {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
 
-      {/* Content */}
-      {/* <div className="relative z-10 min-w-[300px]">
-        <div className="font-tradegothic ml-4 mr-10 sm:ml-[40px] md:ml-[46px] text-xs uppercase space-y-4">
-          <div className="font-tradegothic text-xxs uppercase mb-[130px] mt-3">
-            <h2>Producer / Director</h2>
-          </div>
-          <div className="relative group">
-            <h2 className="relative before:content-['+'] before:absolute before:-left-3 before:opacity-0 group-hover:before:opacity-100">
-              Strategy
-            </h2>
-            <span className="absolute top-[152px] left-0 font-tradegothic text-xs uppercase hidden group-hover:block">
-              Insights for modern brands, campaigns, and content.
-            </span>
-          </div>
-          <div className="relative group">
-            <h2 className="relative before:content-['+'] before:absolute before:-left-3 before:opacity-0 group-hover:before:opacity-100">
-              Production
-            </h2>
-            <span className="absolute top-[120px] left-0 font-tradegothic text-xs uppercase hidden group-hover:block">
-              Hands-on producer delivering quality media at any scale.
-            </span>
-          </div>
-          <div className="relative group">
-            <h2 className="relative before:content-['+'] before:absolute before:-left-3 before:opacity-0 group-hover:before:opacity-100">
-              Marketing
-            </h2>
-            <span className="absolute top-[92px] left-0 font-tradegothic text-xs uppercase hidden group-hover:block">
-              Digital native, multidisciplinary marketing expert.
-            </span>
-          </div>
-          <div className="relative group">
-            <h2 className="relative before:content-['+'] before:absolute before:-left-3 before:opacity-0 group-hover:before:opacity-100">
-              Leadership
-            </h2>
-            <span className="absolute top-[56px] left-0 mt-1 font-tradegothic text-xs uppercase hidden group-hover:block">
-              Proven ability to lead complex projects for top companies.
-            </span>
-          </div>
-        </div>
+      {/* Content - Uncomment if needed */}
+      {/* <div className="relative z-10">
+        <h1 className="text-white text-4xl">Your Hero Content</h1>
       </div> */}
     </section>
   );
