@@ -18,15 +18,15 @@ const Header = () => {
       <div className="flex w-full">
         {/* Navigation */}
         <nav className="mr-4 ml-auto sm:ml-[54px] md:ml-[70px] flex items-center h-full">
-          <ul className="flex gap-x-6 items-center h-full group">
+          <ul className="flex gap-x-6 items-center h-full">
             {["work", "clients", "bio"].map((item) => (
               <li key={item} className="flex items-center h-full">
                 <NavLink
                   to={`/${item}`}
                   className={({ isActive }) =>
-                    `font-nunito uppercase text-xs px-2 flex items-center transition-all duration-200 ${isHome ? "text-white" : "text-black"}
-                    ${isActive ? "text-black" : "hover:text-black"}
-                    group-hover:opacity-30 hover:!opacity-100`
+                    `font-nunito uppercase text-xs px-2 flex items-center transition-opacity duration-200 
+                    ${isHome ? "text-white" : "text-black"}
+                    opacity-50 hover:opacity-100`
                   }
                 >
                   {item.toUpperCase()}

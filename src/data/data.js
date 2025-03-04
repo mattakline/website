@@ -1,6 +1,5 @@
 export const brands = [
   "Xbox",
-  "Halo",
   "Microsoft",
   "Activision Blizzard",
   "Riot Games",
@@ -35,6 +34,31 @@ export const agencies = [
   "Major League Gaming",
   "368",
   "Dreamhack",
+];
+
+export const esports = [
+  "Halo Championship Series",
+  "Intel Extreme Masters",
+  "ESL One",
+  "ESL Pro League",
+  "WCS StarCraft 2",
+  "MLG Pro Circuit",
+  "World of Tanks",
+  "LCS Europe",
+  "Team Dignitas",
+];
+
+export const games = [
+  "Battlefield",
+  "Counter-Strike",
+  "League of Legends",
+  "Starcraft",
+  "World of Tanks",
+  "Gears of War",
+  "Halo",
+  "Tekken",
+  "Dota 2",
+  "Call of Duty",
 ];
 
 export const live = [
