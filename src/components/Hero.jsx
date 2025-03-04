@@ -22,10 +22,10 @@ const Hero = () => {
         <source src="./videos/website.mp4" type="video/mp4" />
       </video>
 
-      {/* Dark Overlay for better readability (optional) */}
-      {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
+      {/* 50% Opaque Black Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-      {/* Content - Uncomment if needed */}
+      {/* Content */}
       {/* <div className="relative z-10">
         <h1 className="text-white text-4xl">Your Hero Content</h1>
       </div> */}
