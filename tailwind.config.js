@@ -6,12 +6,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        nunito: ["Nunito", "sans-serif", ...defaultTheme.fontFamily.sans],
+        nunitobd: ["Nunito Bold", "sans-serif", ...defaultTheme.fontFamily.sans],
         tradegothic: ['"Trade Gothic LT"', ...defaultTheme.fontFamily.sans],
         tradegothicbd: ['"Trade Gothic LT Bold"', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
         'xxs': '.60rem',
-        'xs': '.64rem',
+        'xs': '.77rem',
         'l': '1.2rem',
         'xl': '3rem', // 24px
         'xxl': '4rem',  // 32px

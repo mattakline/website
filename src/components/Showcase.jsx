@@ -37,7 +37,7 @@ const Showcase = () => {
   if (!item) {
     return (
       <section className="min-h-screen bg-white flex items-center justify-center">
-        <p className="text-center font-tradegothic text-xs uppercase">
+        <p className="text-center font-nunito text-xs uppercase">
           404 Page does not exist
         </p>
       </section>
@@ -68,14 +68,14 @@ const Showcase = () => {
 
         {/* Text beneath the video */}
         <div className="mt-8 text-left">
-          <h2 className="font-tradegothicbd text-l uppercase leading-[1.1]">
+          <h2 className="font-nunito font-semibold text-l uppercase leading-[1.1]">
             {item.line1}
             <br />
             {item.line2}
           </h2>
-          <p className="font-tradegothic text-xs uppercase">{item.line3}</p>
-          <p className="font-tradegothic text-xs uppercase">{item.line4}</p>
-          <p className="font-tradegothic text-xs uppercase">{item.line5}</p>
+          <p className="font-nunito text-xs uppercase mt-2">{item.line3}</p>
+          {/* <p className="font-nunito text-xs uppercase">{item.line4}</p>
+          <p className="font-nunito text-xs uppercase">{item.line5}</p> */}
         </div>
       </div>
     </section>

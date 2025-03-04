@@ -3,20 +3,32 @@ import { brands, agencies } from "../data/data";
 
 const Clients = () => {
   return (
-    <section id="clients" className="font-tradegothic py-6 text-xs uppercase">
-      <div className="container py-6 px-4 sm:ml-[160px] md:ml-[180px]">
-        <h2 className="uppercase mb-4">Brands _</h2>
-        <div className="mb-4">
+    <section id="clients" className="font-nunito py-6 text-xs uppercase">
+      <div className="container max-w-[380px] py-6 px-4 sm:ml-[160px] md:ml-[180px]">
+        {/* Brands Section */}
+        <h2 className="uppercase mb-4 px-2 inline-block 
+  border-l-2 border-black">
+ Brands
+</h2>
+         <div className="flex flex-wrap gap-4 mt-2 mb-6">
           {[...brands].sort().map((brand, index) => (
-            <p key={`brand-${index}`}>{brand}</p>
+            <span key={`brand-${index}`} className="whitespace-nowrap">
+              {brand}
+            </span>
           ))}
         </div>
-        <h2 className="uppercase mb-4">Agencies _</h2>
-        <ul>
+
+        {/* Agencies Section */}
+        <h2 className="mt-4 uppercase mb-4 px-2 inline-block 
+  border-l-2 border-black">
+ Agencies
+</h2>       <div className="flex flex-wrap mt-2 gap-4">
           {[...agencies].sort().map((agency, index) => (
-            <li key={`agency-${index}`}>{agency}</li>
+            <span key={`agency-${index}`} className="whitespace-nowrap">
+              {agency}
+            </span>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );

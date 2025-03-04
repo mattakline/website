@@ -6,6 +6,7 @@ import Clients from "./components/Clients";
 import Work from "./components/Work";
 import Showcase from "./components/Showcase";
 import Contact from "./components/Contact";
+import About from "./components/About";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/portfolio/:id" element={<Showcase />} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/bio" element={<About />} />
       </Routes>
       <Footer />
     </Router>
