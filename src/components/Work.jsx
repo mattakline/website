@@ -21,13 +21,13 @@ const Work = () => {
               {/* Thumbnail (Always Visible) */}
               <img src={item.thumb} alt={item.line2} className="w-full max-w-[440px] mb-4 rounded-sm" />
               
-              {/* Text Content (Transparent Until Hover) */}
-              <h2 className="font-nunito font-semibold text-l uppercase leading-[1.1] text-left opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              {/* Text Content - Always visible on mobile, fades in on hover for larger screens */}
+              <h2 className="font-nunito font-semibold text-l uppercase leading-[1.1] text-left opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-200">
                 {item.line1}
                 <br />
                 {item.line2}
               </h2>
-              <p className="font-nunito text-xs uppercase py-2 text-left opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <p className="font-nunito text-xs uppercase py-2 text-left opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-200">
                 {item.line3}
               </p>
             </Link>
@@ -48,13 +48,13 @@ const Work = () => {
               {/* Thumbnail (Always Visible) */}
               <img src={item.thumb} alt={item.line2} className="w-full max-w-[500px] mb-4 rounded-sm" />
               
-              {/* Text Content (Transparent Until Hover) */}
-              <h2 className="font-nunito font-semibold text-l uppercase leading-[1.1] text-left opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              {/* Text Content - Always visible on mobile, fades in on hover for larger screens */}
+              <h2 className="font-nunito font-semibold text-l uppercase leading-[1.1] text-left opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-200">
                 {item.line1}
                 <br />
                 {item.line2}
               </h2>
-              <p className="font-nunito text-xs uppercase py-2 text-left opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <p className="font-nunito text-xs uppercase py-2 text-left opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-200">
                 {item.line3}
               </p>
             </Link>
