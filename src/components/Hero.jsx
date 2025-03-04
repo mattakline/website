@@ -13,10 +13,11 @@ const Hero = () => {
     <section id="home" className="fixed top-0 left-0 w-full h-screen flex items-center justify-center">
       {/* Fullscreen Video Background */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none sm:pointer-events-auto"
         autoPlay
         muted
         loop
+        playsInline
       >
         <source src="./videos/website.mp4" type="video/mp4" />
       </video>
